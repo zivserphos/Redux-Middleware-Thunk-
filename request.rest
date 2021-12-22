@@ -1,4 +1,4 @@
-GET api.openweathermap.org/data/2.5/weather?q=london&appid=10b0d2b58718b705da51157712a6320e HTTP/1.1
+GET https://api.openweathermap.org/data/2.5/weather?q=london&appid=10b0d2b58718b705da51157712a6320e HTTP/1.1
 
 
 ### 6eb657d5a5be44b040061d2ed140e8da

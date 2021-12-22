@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getCityInfo = (cityName) => async (dispatch) => {
   const response = await axios.get(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=10b0d2b58718b705da51157712a6320e`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=10b0d2b58718b705da51157712a6320e`
   );
   const whether = {
     name: response.data.name,
