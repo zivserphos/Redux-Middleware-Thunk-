@@ -20,3 +20,12 @@ export const getCityInfo = (cityName) => async (dispatch) => {
     },
   });
 };
+
+export const existCity = (whether) => {
+  return {
+    type: whetherTypes.EXIST_CITY,
+    payload: {
+      whether,
+    },
+  };
+};

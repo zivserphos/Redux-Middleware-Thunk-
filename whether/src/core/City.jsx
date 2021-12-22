@@ -10,7 +10,7 @@ const City = ({city}) => {
                 <div className="date">
                     {moment().format('dddd')}
                 </div>
-                <div class="city">
+                <div className="city">
                     {city.name}
                 </div>
                 <div className="temp">
