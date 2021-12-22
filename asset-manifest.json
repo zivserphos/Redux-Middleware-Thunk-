@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Redux-Middleware-Thunk-/static/css/main.83870dcf.css",
+    "main.js": "/Redux-Middleware-Thunk-/static/js/main.68e64dac.js",
+    "index.html": "/Redux-Middleware-Thunk-/index.html",
+    "main.83870dcf.css.map": "/Redux-Middleware-Thunk-/static/css/main.83870dcf.css.map",
+    "main.68e64dac.js.map": "/Redux-Middleware-Thunk-/static/js/main.68e64dac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83870dcf.css",
+    "static/js/main.68e64dac.js"
+  ]
+}
