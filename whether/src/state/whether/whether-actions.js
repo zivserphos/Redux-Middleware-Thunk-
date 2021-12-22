@@ -1,23 +1,22 @@
 import * as whetherTypes from "./whether-types";
+import axios from "axios";
 
-export const getCityInfo = (cityName) => {
-  return {
+export const getCityInfo = (cityName) => async (dispatch) => {
+  const response = await axios.get(
+    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=10b0d2b58718b705da51157712a6320e`
+  );
+  const whether = {
+    name: response.data.name,
+    temp: response.data.main.temp,
+    wind: response.data.wind.speed,
+    description: response.data.weather[0].description,
+    feelsLike: response.data.main["feels_like"],
+  };
+
+  dispatch({
     type: whetherTypes.GET_CITY_INFO,
     payload: {
-      city: cityName,
+      whether,
     },
-  };
+  });
 };
-
-export const myLogger = (store) => (next) => (action) => {
-  console.log("im on the middleware");
-};
-// export const adjustQty = (itemID, value) => {
-//   return {
-//     type: whetherTypes.ADJUST_QTY,
-//     payload: {
-//       id: itemID,
-//       qty: value,
-//     },
-//   };
-// };
